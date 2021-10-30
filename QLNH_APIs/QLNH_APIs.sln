@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLNH_APIs", "QLNH_APIs\QLNH_APIs.csproj", "{6676E9E8-8C7F-49CD-A635-8E8327C2812F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLNH_APIs", "QLNH_APIs\QLNH_APIs.csproj", "{DA442952-C46C-4FFC-A4A6-7A4767C868F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6676E9E8-8C7F-49CD-A635-8E8327C2812F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6676E9E8-8C7F-49CD-A635-8E8327C2812F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6676E9E8-8C7F-49CD-A635-8E8327C2812F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6676E9E8-8C7F-49CD-A635-8E8327C2812F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA442952-C46C-4FFC-A4A6-7A4767C868F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA442952-C46C-4FFC-A4A6-7A4767C868F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA442952-C46C-4FFC-A4A6-7A4767C868F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA442952-C46C-4FFC-A4A6-7A4767C868F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8C2E1F82-408D-46C5-AAAF-335B7C78C175}
+		SolutionGuid = {24985BFC-E96B-4A6C-8A3A-28CD62C158F4}
 	EndGlobalSection
 EndGlobal
