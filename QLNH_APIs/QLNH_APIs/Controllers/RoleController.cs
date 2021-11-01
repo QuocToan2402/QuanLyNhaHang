@@ -46,7 +46,7 @@ namespace QLNH_APIs.Controllers
         [HttpPost]
         public Role Post([FromQuery] Role Role)
         {
-            _context.Role.Add(Role);
+            _context.Role.Add(Role);    //_context: goi toi table
             _context.SaveChanges();
             return Role;
         }
