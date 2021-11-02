@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace QLNH_APIs.Migrations
 {
-    public partial class DBInit : Migration
+    public partial class UpdateDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -94,6 +94,30 @@ namespace QLNH_APIs.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Order", x => x.Id);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "Restaurant",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    Name = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Description = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Phone = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Address = table.Column<string>(type: "longtext", nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Created = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    Updated = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    Deleted = table.Column<bool>(type: "tinyint(1)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Restaurant", x => x.Id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -418,6 +442,9 @@ namespace QLNH_APIs.Migrations
 
             migrationBuilder.DropTable(
                 name: "OrderItem");
+
+            migrationBuilder.DropTable(
+                name: "Restaurant");
 
             migrationBuilder.DropTable(
                 name: "User");

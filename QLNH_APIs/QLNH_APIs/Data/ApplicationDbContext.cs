@@ -22,6 +22,7 @@ namespace QLNH_APIs.Data
         public DbSet<Order> Order { get; set; }
         public DbSet<OrderItem> OrderItem { get; set; }
         public DbSet<Location> Location { get; set; }
+        public DbSet<Restaurant> Restaurant { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
             Database.EnsureCreated();
