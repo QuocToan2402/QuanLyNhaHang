@@ -1,4 +1,16 @@
-.body{
-  margin: 0px;
-  padding: 0px;
+:host ::ng-deep {
+  .p-menubar{
+    background-color: #26A3D1;
+    margin: auto;
+  }
+  .p-menubar .p-menuitem-link{
+    padding: 0.75rem 1rem !important;
+  }
+  .p-menuitem-text{
+    color: #fff !important;
+  }
+  .p-menuitem-icon{
+    color: #fff !important;
+  }
 }
+

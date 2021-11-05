@@ -34,29 +34,21 @@ export class AppComponent implements OnInit{
         {
           label:'Đơn vị',
           icon:'pi pi-fw pi-calendar',
-
-      },{
-            label:'Khu vực',
-            icon:'pi pi-fw pi-calendar',
-
         },
         {
           label:'Thể loại',
+          icon:'pi pi-fw pi-calendar'
+        },
+        {
+          label:'Nhân sự',
           icon:'pi pi-fw pi-calendar',
-
-      },
-      {
-        label:'Nhân sự',
-        icon:'pi pi-fw pi-calendar',
-
-    },
-    {
-      label:'Bàn ăn',
-      icon:'pi pi-fw pi-calendar',
-
-  },
-  {
-            label:'Khu vực',
+        },
+        {
+          label:'Bàn ăn',
+          icon:'pi pi-fw pi-calendar',
+        },
+        {
+            label:'Thức ăn',
             icon:'pi pi-fw pi-calendar',
             items:[
                 {
@@ -82,11 +74,7 @@ export class AppComponent implements OnInit{
             ]
         },
         {
-          label:'Thức ăn',
-          icon:'pi pi-fw pi-calendar',
-      },
-        {
-            label:'Quit',
+            label:'Đăng xuất',
             icon:'pi pi-fw pi-power-off'
         }
     ];
