@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { ModelsComponent } from './models/models.component';
+//import { ModelsComponent } from './models/models.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { RoleComponent } from './role/role.component';
@@ -23,7 +23,7 @@ import { InputTextModule } from 'primeng/inputtext';
   declarations: [
     AppComponent,
     HomeComponent,
-    ModelsComponent,
+   // ModelsComponent,
     PageNotFoundComponent,
     RestaurantComponent,
     RoleComponent
