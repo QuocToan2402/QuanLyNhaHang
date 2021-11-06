@@ -1,6 +1,7 @@
-import { ActivatedRoute, Routes, Route, RouterModule, Router } from '@angular/router';
+
 import { Component, OnInit } from '@angular/core';
 import {MenuItem} from 'primeng/api';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +9,16 @@ import {MenuItem} from 'primeng/api';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  constructor(private route: ActivatedRoute, private router: Routes){}
+    constructor(
+        private route: ActivatedRoute,
+        private router: Router,
+      ) {}
   items: MenuItem[] = [];
   title = 'Quản lý nhà hàng - Admin';
   ngOnInit() {
     this.items = [
         {
-            label:'Nhà hang',
+            label:'Nhà hàng',
             icon:'pi pi-fw pi-home',
             command: () => this.router.navigate(['/restaurant']),
 
@@ -22,7 +26,7 @@ export class AppComponent implements OnInit{
         {
             label:'Quyền',
             icon:'pi pi-fw pi-user-edit',
-            //command: () => this.router.navigate(['/role']),
+            command: () => this.router.navigate(['/role']),
 
         },
         {
